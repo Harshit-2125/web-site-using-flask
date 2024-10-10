@@ -4,10 +4,10 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # Database Configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
 # Initialize the database
-db = SQLAlchemy(app)
+#db = SQLAlchemy(app)
 
 # Route for the home page
 @app.route('/')
