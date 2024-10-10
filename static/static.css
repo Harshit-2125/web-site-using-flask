@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1F2021;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #1F2021;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.call-us {
+  background-color: transparent;
+  color: #7DC1CB;
+  border: 1px solid #7DC1CB;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.call-us:hover {
+  background-color: #7DC1CB;
+  color: #1F2021;
+}
+
+/* Hero Section */
+#hero {
+  text-align: left;
+  padding: 150px 50px;
+  background: url('https://media.gettyimages.com/id/1434331694/photo/hand-with-an-icon-of-energy-in-front-show-symbols-of-various-energies-with-a-solar-cell-in.jpg?b=1&s=2048x2048&w=0&k=20&c=rAevcRVSpgcBoPFHsWMWaeu6ep9HrgeoFQKTGQUijuY=') no-repeat center center/cover;
+  color: #ffffff;
+  position: relative;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #7DC1CB;
+}
+
+.cta-button {
+  background-color: #7DC1CB;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Services Section */
+#services {
+  padding: 50px 20px;
+  background-color: #3F4449;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #7DC1CB;
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1F2021;
+}
+
+.card p {
+  font-size: 16px;
+  color: #1F2021;
+}
+
+/* Additional Sections */
+#location img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #1F2021;
+  padding: 20px;
+  text-align: center;
+}
+
+.services {
+  text-align: left;
+  padding: 40px;
+  background-color: #282828;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: start;
+}
+
+.service-item {
+  background-color: #282828;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.service-item i {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* About Section Styling */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0F0E0E;
+  color: #ffffff;
+}
+
+.about-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.text-content {
+  width: 50%;
+}
+
+.text-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.text-content p {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.cta-button {
+  background-color: #7DC1CB;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-content {
+  width: 35%;
+  height: 100%;
+}
+
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  clip-path: inset(10% 0 10% 0);
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .service-list {
+      grid-template-columns: 1fr;
+  }
+
+  .about-content {
+      flex-direction: column;
+  }
+
+  .about-content img {
+      margin-top: 20px;
+  }
+}
+
+.testimonial-container {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.review-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #0af;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+#cta {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.cta-content p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+#location-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: #3F4449;
+  color: #ffffff;
+}
+
+.location-details {
+  width: 45%;
+}
+
+.location-details h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #7DC1CB;
+}
+
+.location-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.location-map {
+  width: 50%;
+}
+
+.location-map iframe {
+  border-radius: 10px;
+}
+

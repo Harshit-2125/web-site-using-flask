@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLumina Care</title>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Link to static CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='static.css') }}">
+
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    
+</head>
+<body>
+    <!-- Header -->
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-leaf"></i> EcoLumina Care
+    </div>
+    <button class="call-us">Call us</button>
+</header>
+
+    <!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <h1>Grow Green, Shine<br>Brighter</h1>
+        <p>Illuminate Delhi with nature's touch; our eco-smart systems nurture<br>greenery and light up streets for a sustainable future.</p>
+        <button class="cta-button">Illuminate</button>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+        <div class="card">
+            <img src="https://media.gettyimages.com/id/1496858623/photo/hands-protecting-globe-of-green-tree-with-plant-growing-in-the-bulb-and-environmental-icons.jpg?b=1&s=2048x2048&w=0&k=20&c=3vxaNiOBNWIlt-qEfRYxc-e3A274PBnSvkBIM8Uh_ZQ=" alt="Service 1">
+            <h3>Intelligent Street Monitoring</h3>
+            <p>Track and control streetlights remotely for efficient energy use and better urban management.</p>
+        </div>
+        <div class="card">
+            <img src="https://media.gettyimages.com/id/1434331694/photo/hand-with-an-icon-of-energy-in-front-show-symbols-of-various-energies-with-a-solar-cell-in.jpg?b=1&s=2048x2048&w=0&k=20&c=rAevcRVSpgcBoPFHsWMWaeu6ep9HrgeoFQKTGQUijuY=" alt="Service 2">
+            <h3>Smart Irrigation Systems</h3>
+            <p>Automate watering schedules to ensure optimal plant health, saving water and boosting growth.</p>
+        </div>
+        <div class="card">
+            <img src="https://media.gettyimages.com/id/1439843828/photo/close-up-photo-of-lightbulb-with-growing-plant-inside-and-coin-stacks-as-a-symbol-of-money.jpg?b=1&s=2048x2048&w=0&k=20&c=X65ktbLoFTeWeQYbi9hSrB1jGAaUB4I83eUao9yXXHg=" alt="Service 3">
+            <h3>Energy-Efficient Lighting</h3>
+            <p>Install smart lights that adjust brightness based on needs, reducing power consumption.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="about-content">
+        <div class="text-content">
+            <h2>Illuminate and Nurture with EcoLumina Care in Delhi</h2>
+            <p>EcoLumina Care offers eco-smart streetlights and plant care systems in Delhi. Our solutions light up your surroundings and keep your plants thriving. Embrace sustainability with our innovative systems.</p>
+            <button class="cta-button">Contact</button>
+        </div>
+        <div class="image-content">
+            <img src="https://wallpapers.com/images/hd/windy-alley-green-aesthetic-lvc7a04pqoar7ra8.jpg" alt="EcoLumina Care Systems">
+        </div>
+    </div>
+</section>
+
+<!-- More Services Section -->
+<section class="services">
+    <h1>Our Services<h1>
+    <div class="service-list">
+        <div class="service-item">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Smart Energy Streetlights</h3>
+            <p>Our streetlights save energy by adjusting brightness as needed, helping reduce energy costs.</p>
+        </div>
+        <div class="service-item">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Plant Health Monitoring</h3>
+            <p>We offer tools for tracking plant health, ensuring their care and vibrant growth in urban spaces.</p>
+        </div>
+        <div class="service-item">
+            <i class="fa-solid fa-tree"></i>
+            <h3>Environment Friendly Solutions</h3>
+            <p>Our services integrate green practices, promoting sustainability in city infrastructure.</p>
+        </div>
+        <div class="service-item">
+            <i class="fa-solid fa-thumbs-up fa-2x"></i>
+            <h3>Automated Watering Systems</h3>
+            <p>We provide automated watering systems that ensure plants receive ample water, rain or shine.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<div class="testimonial-container">
+    <h2>Experience the EcoLumina difference</h2>
+    <div class="testimonial-wrapper" id="testimonial-wrapper">
+        <div class="testimonial-slide">
+            <p class="review-text">EcoLumina Care's solutions are remarkable! Our community now enjoys beautiful, energy-efficient lighting and lush greenery. Their team was prompt and courteous. Thank you for making our environment better!</p>
+            <p>- Rohan</p>
+        </div>
+        <div class="testimonial-slide">
+            <p class="review-text">EcoLumina Care transformed our street with their eco-smart lighting and plant care system! The energy efficiency and greenery are fantastic. Their team was professional and efficient. Highly recommend!</p>
+            <p>- Ananya</p>
+        </div>
+        <div class="testimonial-slide">
+            <p class="review-text">EcoLumina Care has truly enhanced our neighborhood with their eco-smart lighting and plant care system. The blend of energy efficiency and natural beauty is outstanding. Their team was dedicated and professional. Thank you for making our surroundings greener and more sustainable!</p>
+            <p>- Priya</p>
+        </div>
+    </div>
+    <div class="controls">
+        <button onclick="prevReview()">&#60;</button>
+        <button onclick="nextReview()">&#62;</button>
+    </div>
+</div>
+
+<!-- Call-to-Action Section -->
+<section id="cta">
+    <div class="cta-content">
+        <h2>Grow Greener, Shine Brighter in<br> Delhi<br></h2>
+        <p>Illuminate Delhi’s future with eco-smart streetlights and maintain urban greenery. Embrace <br>sustainable growth today, starting from your doorstep!<br></p>
+        <button class="cta-button">Grow Shining</button>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section id="location-section">
+    <div class="location-details">
+        <h2>Our Location</h2>
+        <p><strong>Address:</strong> FC-26, Panduk Shila Marg, Zero Pusta Rd, Shastri Park, Shahdara, New Delhi, Delhi 110053</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> contact@ecoluminacare.com</p>
+        <p>We are located at the heart of Delhi, where our eco-smart systems help improve the green infrastructure of the city.</p>
+    </div>
+    <div class="location-map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.3911841023023!2d77.25852661077519!3d28.677942675538315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfc5e54e6b163%3A0x523ae20fe007eccc!2sDr.%20Akhilesh%20Das%20Gupta%20Institute%20of%20Professional%20Studies!5e0!3m2!1sen!2sin!4v1728201117964!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div
