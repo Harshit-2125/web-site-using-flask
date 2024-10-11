@@ -25,13 +25,17 @@
                  <button class="call-us">Call us</button>
              </a>
          </header>
-
+         
          <!-- Hero Section -->
          <section id="hero">
              <div class="hero-content">
                  <h1>Grow Green, Shine<br>Brighter</h1>
                  <p>Illuminate Delhi with nature's touch; our eco-smart systems nurture<br>greenery and light up streets for a sustainable future.</p>
-                 <button class="cta-button">Illuminate</button>
+                  <!-- Illuminate Button -->
+                  <a href="{{ url_for('illuminate') }}">
+                      <button class="cta-button">Illuminate</button>
+                  </a>
+
              </div>
          </section>
 
@@ -129,7 +133,11 @@
              <div class="cta-content">
                  <h2>Grow Greener, Shine Brighter in<br> Delhi</h2>
                  <p>Illuminate Delhi’s future with eco-smart streetlights and maintain urban greenery. Embrace sustainable growth today, starting from your doorstep!</p>
-                 <button class="cta-button">Grow Shining</button>
+             
+                 <!-- Grow Shining Button -->
+                   <a href="{{ url_for('grow_shining') }}">
+                       <button class="cta-button">Grow Shining</button>
+                   </a>
              </div>
          </section>
 

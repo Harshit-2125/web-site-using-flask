@@ -12,10 +12,17 @@ def home():
 def call_us():
     # Redirecting back to the home page or provide a phone number
     return redirect(url_for('home'))
+ 
+# Route for the Grow Shining page
+@app.route('/grow_shining')
+def grow_shining():
+    return render_template('grow_shining.html')
 
-'''@app.route('/Illuminate')
+# Route for the Illuminate page
+@app.route('/illuminate')
 def illuminate():
-    return redirect(url_for('illuminate.html'))'''
+    return render_template('illuminate.html')
+
 
 # Route for the "Contact" button
 @app.route('/contact')
